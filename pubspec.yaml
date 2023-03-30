@@ -2,7 +2,7 @@ name: kua_dependency_second
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
-
+publish_to: none
 environment:
   sdk: '>=2.19.4 <3.0.0'
   flutter: ">=1.17.0"
@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  kua_dependency_third:
+    git:
+      url: https://github.com/kanal-altyapi/kua-dependency-third.git
+      ref: master
 
 dev_dependencies:
   flutter_test:

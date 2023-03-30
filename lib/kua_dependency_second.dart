@@ -1,7 +1,10 @@
 library kua_dependency_second;
 
-/// A Calculator.
+import 'package:kua_dependency_third/kua_dependency_third.dart';
+
 class SecondDependency {
-  /// Returns [value] plus 1.
-  String getDependencyName() => "second";
+  String getDependencyName() {
+    String third = ThirdDependency().getDependencyName();
+    return "second---$third";
+  }
 }
